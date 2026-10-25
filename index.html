@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="imageStyle.css">
+    <title>Put your title here</title>
+    <style> 
+        .highlight {
+            background-color: #00E6E6;
+        }
+        .indent{
+            text-indent: 20%;
+        }
+        /* Control the shape of the bullet points*/
+        #shape{
+            list-style-type: square; 
+        }
+         /* Adding Grid Area Method images*/
+    .item1 { grid-area: item1; }
+    .item2 { grid-area: item2; }
+    .item3 { grid-area: item3; }
+    .item4 { grid-area: item4; }
+    .item5 { grid-area: item5; }
+    .item6 { grid-area: item6; }
+    .item7 { grid-area: item7; }
+    .item8 { grid-area: item8; }
+    .item9 { grid-area: item9; }
+
+  .wrapper {
+      max-width: 900px;
+      margin: 0px auto;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        'item1 item2 item2'
+        'item1 item5 item6'
+        'item7 item8 item9';
+      gap: 15px;
+      padding: 15px;
+      border-radius: 8px; 
+    }
+
+    .wrapper > div {
+       background-color: #D580FF ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: #333; 
+      text-align: center;
+      padding: 20px;
+      font-size: 18px; 
+    }
+     /* Use display:none; to hide unneeded divs*/
+    .item3{display:none;}
+    .item4{display:none;}
+
+    </style>
+</head>
+<body style="background-color: #0066CC">
+
+<nav>
+        <ul>
+            <!-- REQUIREMENT: At least five items using href="#" -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Fun Facts</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- This is the start of the title -->
+<h1>Underrepresented Women</h1>
+<img src="./images/knife.png" class="knife" alt="Judith and Her Maidservant Knife" width="200px">
+<h2 class="highlight" >Artemisia Gentileschi</h2>
+<p class="indent">Artemisia Gentileschi was an Italian Baroque painter. Gentileschi is considered among the most accomplished 17th-century artists, initially working in the style of Caravaggio. She was producing professional work by the age of 15.[4] In an era when women had few opportunities to pursue artistic training or work as professional artists, Gentileschi was the first woman to become a member of the Accademia di Arte del Disegno in Florence and she had an international clientele.[5][6] Gentileschi worked as an expatriate painter in the court of Charles I of England from 1638 to 1642</p>
+<h2>Henrietta Lacks</h2>
+<p class="indent">Henrietta Lacks’ legacy is eternal. Born in Virginia in 1920, Lacks worked as a tobacco farmer for most of her life until she was diagnosed with cervical cancer. Without her knowledge or consent, a sample of her cancer cells was taken by a doctor. Researchers who studied this sample found that her cells kept reproducing, ultimately making them immortal. Lacks died in 1951, but to this day her cells – known as “HeLa” cells – continue to be studied around the world. Her cells have led to major scientific discoveries regarding the growth of cancer cells and the effects of drugs on the human body. Her cells have also contributed to the development of the polio vaccine. Lacks’ story has brought into question the ethics of patient privacy and has exposed the mistreatment of people of color in healthcare.</p>
+<img class="maid" src="./images/maid.png" alt="Judith's Maidservant" width="250px">
+<h2 >Hedy Lamarr</h2>
+<p>Hedy Lamarr, born in Vienna in 1914, was an actress and inventor. In 1937, Lamarr escaped her controlling husband and Nazi Austria and moved around Europe before crossing over to the United States. While flourishing as a Hollywood starlet, Lamarr also exercised her passion for innovation. Working alongside George Antheil, Lamarr created the “Secret Communications System”, which was intended to switch radio frequencies amidst the chaos of World War II so that enemies could not decode messages. This technology was later adopted by the United States Navy, and serves as a building block behind the wireless communication of today’s cell phones, GPS navigators, and Wi-Fi.</p>
+<h2>Patsy Mink</h2>
+<p>Patsy Mink became the first woman of color elected to the House of Representatives in 1964. The daughter of second-generation Japanese immigrants, Mink was met with racism when she attended the University of Nebraska. With a knack for public service, Mink mobilized students, employees, and alumni to successfully fight against the university’s segregation policy. After completing her undergraduate education and earning a law degree, she ran for the House of Representatives. She was in office from 1964-1977, and then again from 1990-2002. One of Mink’s crowning accomplishments is the Title IX law, which she co-authored with Senator Birch Bayh. Following Mink’s death, Title IX was renamed the Patsy T. Mink Gender Equality in Education Act.</p>
+<img src="./images/Judith_and_maidservant.png" class="judith" alt="Judith and Her Maidservant Knife" width="300px">
+<h2>Faith Spotted Eagle</h2>
+<p>Faith Spotted Eagle is a Native American activist, peacemaker, educator, therapist, and self-proclaimed “hell-raiser”. A member of the Yankton Sioux Nation in South Dakota, Spotted Eagle is a recognized leader of the fight against the Keystone XL and Dakota Access oil pipelines. In 2016, she became the first Native American to receive an electoral vote for president (though she was not running). Spotted Eagle is deeply committed to her community: she’s a founding member of the Brave Heart Society, she helped develop the first Native women’s shelter, and she provides PTSD therapy for veterans and tribes. A longtime advocate of environmental justice and equality, she told the LA Times, “The resistance has always been in my blood and spirit since I was born.”</p>
+<h2>Gladys Bentley</h2>
+<p>Gladys Bentley was a non-conforming icon of the 1920s. Born in Philadelphia in 1907, she moved to New York at age sixteen after being harassed in her community for dressing in boys’ clothes and having feelings for her female teacher. Bentley heard that Harry Hansberry’s Clam House in Manhattan was looking for a male pianist – so she dressed in a tuxedo, auditioned, and got the gig. She was a multi-talented musician who also regularly performed as a blues singer and was known to belt songs about male exploitation and domestic abuse. A black lesbian who often cross-dressed, Bentley famously pushed the boundaries of gender and sexuality while creating spaces of inclusivity. Today, she is recognized as one of America’s most successful black entertainers of the 1920s.</p>
+
+<div class="wrapper">
+
+      <div class="item1">
+    <h3>Mary Anning</h3>
+    <h2>An English fossil collector and paleontologist who became known around the world for her discoveries.</h2>
+  </div>
+  <div class="item2">
+  <img src="./images/mary-anning-blog-web.jpg" alt="Mary Anning" style="max-width: 100%; height: auto; border-radius: 5px;">
+</div>
+  
+
+  
+  <div class="item5">Pioneer</div>
+  <div class="item6">Scientist</div>
+  <div class="item7">Born: 1799</div>
+  <div class="item8">Died: 1847</div>
+  <div class="item9">Discovered Ichthyosaur</div>
+</div>
+
+<table>
+        <thead>
+            <!-- Row 1: Header with a Colspan spanning 2 columns -->
+            <tr>
+                <th colspan="2">Women and the time they lived</th>
+                <th>Fun Facts</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <!-- Row 2: Standard Row -->
+            <tr>
+                <td>Artemesia Gentileschi</td>
+                <td>17th Century</td>
+                <td>She was the first woman to be admitted to the Accademia di Belle Arti in Florence</td>
+            </tr>
+            
+            <!-- Row 3: Data row containing the Rowspan (spans 2 rows downward) -->
+            <tr>
+                <td>Henriette Lacks</td>
+                <td rowspan="2">20th Century</td>
+                <td>Harvested cells became the first immortal human cell line</td>
+            </tr>
+            
+            <!-- Row 4: Column 2 is omitted here -->
+            <tr>
+                <td>Hedy Lamarr</td>
+                <td>Helped lay groundwork for modern wireless technology</td>
+            </tr>
+            
+            <!-- Row 5: Standard Row -->
+            <tr>
+                <td>Mary Anning</td>
+                <td>19th Century</td>
+                <td>Known for her fossil discoveries in Lyme Regis</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <!-- Added a footer row-->
+            <tr>
+                 <td colspan="3" style="text-align: center; font-style: italic;">
+              
+                    Source: <a href="https://www.historicalwomeninstitute.example.com" style="color: #000066;">The Institute of Historical Women</a>
+            </tr>
+        </tfoot>
+    </table>
+
+<h2>Major Scientific Breakthroughs by Women</h2>
+
+<!-- NEW Ordered List  -->
+<ol class="new-ordered-list">
+    <li>Rosalind Franklin's work on the structure of DNA</li>
+    <li>Marie Tharp's mapping of the ocean floor</li>
+    <li>Chien-Shiung Wu's physics experiments
+        <!-- Nested Unordered List  -->
+        <ul class="new-unordered-list">
+            <li>Proved the universe is not perfectly symmetrical</li>
+            <li>Crucial contributor to the Manhattan Project</li>
+            <li>Often called the "First Lady of Physics"</li>
+        </ul>
+    </li>
+    <li>Katherine Johnson's orbital mechanics calculations for NASA</li>
+    <li>Dr. Shirley Jackson's research in telecommunications</li>
+</ol>
+    
+<h2>More amazing women to look up</h2>
+<ul id="shape">
+    <li>Sybil Ludington</li>
+    <li>Alice Ball</li>
+    <li>Lisa Meitner</li>
+    <li> Noor Inayat Khan</li>
+    <li><a href="https://www.historysnob.com/historical-figures/20-women-forgotten-by-history/3">Learn more here!</a></li>
+</ul>
+
+
+<img src="./images/knife.png" class="bigknife" alt="Judith and Her Maidservant Knife">
+
+<!-- Form Section -->
+<section class="form-container">
+    <h2>Submit your favorite woman</h2>
+    <p>There are countless women that history has forgotten. Please submit your information to help them find their true place in now!</p>
+
+    <!-- REQUIREMENT: action and method attributes -->
+    <form action="#" method="POST">
+        
+        <!-- REQUIREMENT: One text field -->
+        <label for="fname">Name of woman:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter her name" required>
+
+        <!-- REQUIREMENT: New Input Type 1 (Date) -->
+        <label for="birth-date">When was she born?</label>
+        <input type="date" id="birth-date" name="birth-date">
+
+        <!-- REQUIREMENT: New Input Type 2 (Color Picker) -->
+        <label for="fav-color">What color do you think represents her best:</label>
+        <input type="color" id="fav-color" name="fav-color" value="#d580ff">
+
+        <!-- REQUIREMENT: Datalist wrapped in a fieldset with a legend -->
+        <fieldset>
+            <legend>What did she do?</legend>
+            <label for="language">What category would she fall under?</label>
+            <input list="languages" id="language" name="language" placeholder="Type or select...">
+            <datalist id="languages">
+                <option value="Scientist">
+                <option value="Artist">
+                <option value="Activist">
+                <option value="Inventor">
+                <option value="Other">
+            </datalist>
+        </fieldset>
+
+        <!-- REQUIREMENT: One set of radio buttons (or checkboxes) -->
+        <div class="radio-group">
+            <p>How much is known about her?</p>
+            <input type="radio" id="alittle" name="known" value="alittle">
+            <label for="alittle">A little</label><br>
+
+            <input type="radio" id="alot" name="known" value="alot">
+            <label for="alot">A lot</label><br>
+
+            <input type="radio" id="nothing" name="known" value="nothing">
+            <label for="nothing">Nothing</label>
+        </div>
+
+        <!-- REQUIREMENT: Two buttons (Submit and Reset) at the end of the form -->
+        <div class="button-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Clear Form</button>
+        </div>
+    </form>
+</section>
+
+<!-- Example footer to show the form is above it -->
+<footer>
+    <p>&copy; 2026 My Website</p>
+</footer>
+
+
+<footer style="text-align:center; clear:both;">
+
+<p style="text-align:center;"><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Services</a> | <a href="#">News</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+
+<br><br><br>
+
+<p style="text-align:center;">Copyright &copy; - All rights reserved</p>
+
+</footer>
+</body>
+</html>

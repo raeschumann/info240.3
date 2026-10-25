@@ -1,0 +1,154 @@
+nav {
+    background-color: #D580FF; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   
+}
+
+nav ul {
+    list-style-type: none; /* Removes the default bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Activates flexbox */
+    justify-content: center; /* Centers the flex items horizontally */
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 16px 24px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    /* Style Change 1: Change background color */
+    background-color: #FFCCF6; 
+    
+    /* Style Change 2: Text color changes to white */
+    color: #ffffff;
+}
+
+
+
+
+
+/* This is the style for the main header*/
+ h1 {
+  text-align: center;
+  color: #440066;
+  text-transform: uppercase;
+}
+
+
+/* This is the style for the paragraph headers*/
+h2 {
+    background-color: #FFCCF6 ;
+    font-family: Papyrus, "Brush Script MT", Monaco;
+}
+
+/* This is the style for the paragraphs*/
+p {
+    background-color: #D580FF ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2%;
+    border-style: solid;
+}
+
+.wrapper {
+      max-width: 900px;
+      margin: 0px auto;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        'item1 item2 item2'
+        'item1 item5 item6'
+        'item7 item8 item9';
+      gap: 15px;
+      background-color: rgba(255, 255, 255, 0.2); 
+      padding: 15px;
+      border-radius: 8px; /* Optional: adds nice rounded corners */
+    }
+
+    .wrapper > div {
+      background-color: rgb(255, 255, 255);
+      color: #333; 
+      text-align: center;
+      padding: 20px;
+      font-size: 18px; 
+    }
+
+
+th {
+  background-color: #FFCCF6;
+  border: 2px solid #000000;  
+  padding: 20px; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+  td {
+   background-color: #D580FF; 
+   border: 2px solid #000000;  
+    padding: 20px; 
+    font-family: Papyrus, "Brush Script MT", Monaco;
+    }
+
+table {
+  margin-left: auto;  
+  margin-right: auto;
+    }
+
+/* 1. Changes the new ordered list from numbers to uppercase letters */
+.new-ordered-list {
+    list-style-type: upper-alpha;
+}
+
+/* 2. Changes the new nested unordered list from solid bullets to open circles */
+.new-unordered-list {
+    list-style-type: circle;
+}
+
+/* Form style */
+
+form {
+    background-color: #ffffff; 
+    padding: 30px;  
+    border-radius: 8px; 
+}
+
+/* Base button styles */
+button[type="submit"], 
+button[type="reset"] {
+    padding: 12px 24px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Submit Button Colors */
+button[type="submit"] {
+    background-color: #D580FF;
+    color: #333333; 
+}
+
+button[type="submit"]:hover {
+    background-color: #b86be0; 
+}
+
+/*  Reset Button Colors */
+button[type="reset"] {
+    background-color: #FFCCF6; 
+    color: #333333; 
+}
+
+button[type="reset"]:hover {
+    background-color: #762f9d; /* Dark purple on hover */
+    color: #ffffff; /* White text on hover */
+}
