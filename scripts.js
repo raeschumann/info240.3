@@ -1,6 +1,7 @@
-function revealMessage() {
-  let myMessage = "Thanks for watching! I hope you enjoyed learning more about Artemesia Gentilischi!";
-  
-  document.getElementById("hidden-message").innerHTML = myMessage;
-  document.getElementById("hidden-message").style.display = "block";
+function shootConfetti() {
+  // Fires a burst of confetti!
+  confetti({
+    particleCount: 150, 
+    spread: 80,         
+  });
 }
