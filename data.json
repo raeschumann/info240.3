@@ -1,0 +1,20 @@
+[
+ {
+ "Name": "Artemesia Gentileschi",
+ "location": "Italy",
+ "birth year": "1593",
+ "type": "Baroque painter"
+ },
+ {
+ "Name": "Henrietta Lacks",
+ "location": "Maryland",
+ "birth year": "1920",
+ "type": "Cancer researcher"
+ },
+ {
+ "Name": "Hedy Lamarr",
+ "location": "Vienna",
+ "birth year": "1914",
+ "type": "Inventor and actress"
+ }
+]
