@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="imageStyle.css">
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <title>INFO 240</title>
+    <title>Put your title here</title>
     <style> 
         .highlight {
             background-color: #00E6E6;
@@ -73,27 +71,9 @@
 
     <!-- This is the start of the title -->
 <h1>Underrepresented Women</h1>
-
-<!-- Centered Container for Slides and Button -->
-<div style="display: flex; flex-direction: column; align-items: center; gap: 20px; margin-top: 30px;">
-  
-  <!-- Embedded Google Slides (Auto-playing) -->
-  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT0641pYKdU3Osc6Pud_wxwt0iOlDNewnX8Ymu1qZhqxD-kFDOj_pVRGqH33jeSUfJaHAys3J1D6GQM/pubembed?start=true&loop=true&delayms=3000" frameborder="0" width="800" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-  
-  <!-- JavaScript Interactive Button -->
-  <button onclick="shootConfetti()" style="padding: 12px 20px; cursor: pointer; background-color: #9b59b6; color: white; border: none; border-radius: 5px; font-weight: bold; font-size: 16px;">
-    Celebrate this presentation! 🎉
-  </button>
-
-</div>
-
 <img src="./images/knife.png" class="knife" alt="Judith and Her Maidservant Knife" width="200px">
 <h2 class="highlight" >Artemisia Gentileschi</h2>
 <p class="indent">Artemisia Gentileschi was an Italian Baroque painter. Gentileschi is considered among the most accomplished 17th-century artists, initially working in the style of Caravaggio. She was producing professional work by the age of 15.[4] In an era when women had few opportunities to pursue artistic training or work as professional artists, Gentileschi was the first woman to become a member of the Accademia di Arte del Disegno in Florence and she had an international clientele.[5][6] Gentileschi worked as an expatriate painter in the court of Charles I of England from 1638 to 1642</p>
-<!-- Centered Container for Video and Button -->
-
-
-<p id="hidden-message" style="display: none; margin-top: 10px; font-weight: bold; color: #2c3e50;"></p>
 <h2>Henrietta Lacks</h2>
 <p class="indent">Henrietta Lacks’ legacy is eternal. Born in Virginia in 1920, Lacks worked as a tobacco farmer for most of her life until she was diagnosed with cervical cancer. Without her knowledge or consent, a sample of her cancer cells was taken by a doctor. Researchers who studied this sample found that her cells kept reproducing, ultimately making them immortal. Lacks died in 1951, but to this day her cells – known as “HeLa” cells – continue to be studied around the world. Her cells have led to major scientific discoveries regarding the growth of cancer cells and the effects of drugs on the human body. Her cells have also contributed to the development of the polio vaccine. Lacks’ story has brought into question the ethics of patient privacy and has exposed the mistreatment of people of color in healthcare.</p>
 <img class="maid" src="./images/maid.png" alt="Judith's Maidservant" width="250px">
@@ -208,11 +188,13 @@
 <section class="form-container">
     <h2>Submit your favorite woman</h2>
     <p>There are countless women that history has forgotten. Please submit your information to help them find their true place in now!</p>
-    <form action="https://gophp.w3spaces.com/contactA.php" method="POST">
+
+    <!-- REQUIREMENT: action and method attributes -->
+    <form action="#" method="POST">
         
         <!-- REQUIREMENT: One text field -->
-        <label for="name">Name of woman:</label>
-        <input type="text" id="name" name="name" placeholder="Enter her name" required>
+        <label for="fname">Name of woman:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter her name" required>
 
         <!-- REQUIREMENT: New Input Type 1 (Date) -->
         <label for="birth-date">When was she born?</label>
@@ -257,6 +239,21 @@
     </form>
 </section>
 
+<!-- Adding in Json file -->
+<table id="data" border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Birth Year</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Data goes here -->
+        </tbody>
+    </table>
+
 <!-- Example footer to show the form is above it -->
 <footer>
     <p>&copy; 2026 My Website</p>
@@ -272,5 +269,6 @@
 <p style="text-align:center;">Copyright &copy; - All rights reserved</p>
 
 </footer>
+<script src="fetch.js"></script>
 </body>
 </html>
